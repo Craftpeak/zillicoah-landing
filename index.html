@@ -13,9 +13,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <style type="text/css">
+        @import url("https://use.typekit.net/lcu0zej.css");
         /* apply a natural box layout model to all elements, but allowing components to change */
         html {
             box-sizing: border-box;
+            font-size: 62.5%;
         }
         *, *:before, *:after {
             box-sizing: inherit;
@@ -26,18 +28,21 @@
             color: white;
             display: flex;
             flex-direction: column;
+            font-size: 1.8rem;
+            font-family: 'proxima-nova', sans-serif;
             justify-content: center;
             margin: 0;
             min-height: 100vh;
             min-width: 100vw;
             padding: 20px;
+            text-rendering: optimizeLegibility;
         }
         .logo {
             max-width: 100%;
             height: auto;
         }
         .social {
-            padding-top: 80px;
+            padding-top: 4rem;
         }
         .social-icon-wrap {
             display: inline-block;
@@ -45,10 +50,52 @@
             margin: 0 10px;
             width: 40px;
         }
+        .shop-link {
+            font-size: 2.4rem;
+            margin-top: 4rem;
+        }
+        .shop-link .button {
+            margin: 0 auto;
+            max-width: 48rem;
+            width: 100%;
+        }
+        a:not(.button), a:not(.button):visited {
+            color: #01c3c6;
+            transition: 300ms;
+            text-decoration: none;
+        }
+        a:not(.button):hover, a:not(.button):active {
+            color: #5de6e8;
+        }
+        .button {
+            -webkit-appearance: none;
+            background-color: #01c3c6;
+            border-radius: .3rem;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 1.24rem;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            line-height: 1.4;
+            outline: none;
+            padding: 1.6rem 2.8rem;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: none;
+            text-transform: uppercase;
+            transition: all .3s ease-in-out;
+        }
+        .button:hover {
+            background-color: #5de6e8;
+        }
     </style>
 </head>
 <body>
     <img src="logo.png" srcset="logo_2x.png 2x" class="logo" alt="Zillacoah Beer Co. Logo">
+    <div class="shop-link">
+        <a class="button" href="https://shop.zillicoahbeer.com/" title="Zillicoah Beer Company Online Shop">Session Fest Tickets On Sale Now</a>
+    </div>
     <div class="social">
         <a href="https://www.facebook.com/ZillicoahBeer/" class="social-icon-wrap">
             <img class="social-icon" src="facebook.svg" alt="Facebook Logo">
